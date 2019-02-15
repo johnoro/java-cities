@@ -10,13 +10,15 @@ import javax.persistence.Id;
 @Entity
 public class City {
   private @Id @GeneratedValue Long id;
+  private String name;
   private int medianHomePrice;
   private int affordabilityIndex;
 
   public City() {}
 
-  public City(int medianHomePrice, int affordabilityIndex) {
-    this.medianHomePrice = medianHomePrice;
-    this.affordabilityIndex = affordabilityIndex;
+  public City(String name, int price, int index) {
+    this.name = name;
+    medianHomePrice = price;
+    affordabilityIndex = index;
   }
 }
