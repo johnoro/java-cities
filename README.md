@@ -24,17 +24,17 @@ Remember that each message must have a Text, priority, and whether it is secret 
 
 ### Get
 
-/cities/afford -> 
+- [x] /cities/afford -> 
 * put all secret messages on the secret queue
 * put all NON secret messages with affordability index < 6 in the cities1 queue
 * put all other messages in the cities2 queue
 
-/cities/homes ->
+- [x] /cities/homes ->
 * put all secret messages on the secret queue
 * put all NON secret messages with home prices > 200000 in the cities1 queue
 * put all other messages in the cities2 queue
 
-/cities/names ->   
+- [x] /cities/names ->   
 * put all secret messages on the secret queue
 * put all NON secret messages the cities1 queue
 * put nothing in the cities2 queue
